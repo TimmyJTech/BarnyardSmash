@@ -19,8 +19,7 @@ public class Animal : MonoBehaviour {
     }
 
     public void Caught() {
-        //Add Money
-
-        // Remove Animal
+        GameManager.instance.AddMoney(moneyToGive);
+        AnimalManager.instance.ReplaceAnimal(gameObject);
     }
 }
